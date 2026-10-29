@@ -255,5 +255,13 @@
         "content": "$1"
       }
     }
+  },
+  "confirmRemove": {
+    "message": "Unblock $P1$? The site will open normally again.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   }
 }

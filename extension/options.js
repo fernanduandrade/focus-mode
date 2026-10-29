@@ -3,6 +3,7 @@ import { activeSites, faviconUrl } from "./lib/sites.js";
 import { addSite, removeSite, replaceSite } from "./lib/site-actions.js";
 import { FREE_SITE_LIMIT } from "./config.js";
 import { t, localizePage } from "./lib/i18n.js";
+import { confirmDialog } from "./lib/confirm.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -58,6 +59,7 @@ function buildItem(site, active) {
     if (e.key === "Escape") setEditing(false);
   });
   q(".remove-btn").addEventListener("click", async () => {
+    if (!(await confirmDialog(t("confirmRemove", site), t("remove")))) return;
     await removeSite(site);
     showMessage("");
     await load();

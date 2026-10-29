@@ -215,3 +215,34 @@ body[data-time="dawn"] .sky::before {
 @media (prefers-reduced-motion: reduce) {
   .rain, .stars, .clouds { animation: none; }
 }
+
+/* Janela de confirmação (lib/confirm.js) */
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(10, 6, 20, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: confirm-fade 0.15s ease-out;
+}
+.confirm-card {
+  width: 100%;
+  max-width: 340px;
+  padding: 18px;
+  border-radius: 20px;
+  background: var(--glass);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 60px rgba(10, 6, 20, 0.4);
+  color: var(--text);
+}
+.confirm-message { margin: 0 0 16px; line-height: 1.45; word-break: break-word; }
+.confirm-actions { display: flex; justify-content: flex-end; gap: 8px; }
+.confirm-actions .confirm-ok { background: var(--danger); color: #2a1212; }
+@keyframes confirm-fade { from { opacity: 0; } }

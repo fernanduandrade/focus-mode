@@ -2,6 +2,7 @@ import * as store from "./lib/storage.js";
 import * as api from "./lib/api.js";
 import { siteLimit, activeSites, faviconUrl } from "./lib/sites.js";
 import { addSite as addSiteAction, removeSite as removeSiteAction, currentTab } from "./lib/site-actions.js";
+import { confirmDialog } from "./lib/confirm.js";
 import { t, formatDate, localizePage } from "./lib/i18n.js";
 import { FREE_SITE_LIMIT } from "./config.js";
 
@@ -139,6 +140,7 @@ async function blockCurrentSite() {
 }
 
 async function removeSite(site) {
+  if (!(await confirmDialog(t("confirmRemove", site), t("remove")))) return;
   applyResult(await removeSiteAction(site));
 }
 
