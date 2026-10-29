@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Focus Block</title>
+  <link rel="stylesheet" href="scene.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="orb"></div>
+    <div class="clouds"></div>
+    <div class="rain"></div>
+    <div class="hills"></div>
+  </div>
+
+  <header>
+    <h1>Focus Block</h1>
+    <span id="plan-badge" class="badge">Free</span>
+  </header>
+
+  <section id="current" class="card" hidden>
+    <p class="muted" data-i18n="currentSite"></p>
+    <div class="current-row">
+      <img id="current-icon" alt="" width="20" height="20" hidden>
+      <strong id="current-domain"></strong>
+    </div>
+    <button id="block-current-btn" type="button" class="wide" data-i18n="blockThisSite"></button>
+    <p id="current-blocked" class="muted" data-i18n="alreadyBlockedCurrent" hidden></p>
+  </section>
+
+  <section>
+    <div class="list-header">
+      <h2 data-i18n="blockedSites"></h2>
+      <span id="limit-info" class="muted"></span>
+    </div>
+    <ul id="site-list"></ul>
+    <p id="empty-list" class="muted" data-i18n="emptyList" hidden></p>
+    <p id="site-error" class="error" hidden></p>
+    <details id="manual-add">
+      <summary data-i18n="addOtherSite"></summary>
+      <form id="add-form">
+        <input id="site-input" type="text" data-i18n-placeholder="sitePlaceholder" autocomplete="off" required>
+        <button type="submit" data-i18n="block"></button>
+      </form>
+    </details>
+    <button id="options-btn" type="button" class="link" data-i18n="manageSites"></button>
+  </section>
+
+  <section id="upsell" class="card" hidden>
+    <strong data-i18n="upsellTitle"></strong>
+    <p class="muted" data-i18n="upsellText"></p>
+    <button id="subscribe-btn" type="button" data-i18n="subscribe"></button>
+  </section>
+
+  <section id="account">
+    <div id="logged-out">
+      <h2 data-i18n="account"></h2>
+      <form id="auth-form">
+        <input id="email" type="email" data-i18n-placeholder="emailPlaceholder" autocomplete="email" required>
+        <input id="password" type="password" data-i18n-placeholder="passwordPlaceholder" minlength="6" autocomplete="current-password" required>
+        <div class="row">
+          <button type="submit" data-action="signin" data-i18n="signIn"></button>
+          <button type="submit" data-action="signup" class="secondary" data-i18n="signUp"></button>
+        </div>
+      </form>
+      <button id="forgot-btn" type="button" class="link" data-i18n="forgotPassword"></button>
+      <p id="auth-message" class="muted" hidden></p>
+    </div>
+
+    <div id="logged-in" hidden>
+      <h2 data-i18n="account"></h2>
+      <p><span id="user-email"></span></p>
+      <p id="plan-detail" class="muted"></p>
+      <div class="row">
+        <button id="manage-btn" type="button" class="secondary" data-i18n="manageSubscription" hidden></button>
+        <button id="refresh-btn" type="button" class="secondary" data-i18n="refreshStatus"></button>
+        <button id="signout-btn" type="button" class="link" data-i18n="signOut"></button>
+      </div>
+    </div>
+  </section>
+
+  <script src="scene.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

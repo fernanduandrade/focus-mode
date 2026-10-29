@@ -1,0 +1,243 @@
+{
+  "extName": {
+    "message": "Focus Block"
+  },
+  "extDescription": {
+    "message": "Block the sites that steal your focus."
+  },
+  "currentSite": {
+    "message": "Current site"
+  },
+  "blockThisSite": {
+    "message": "Block this site"
+  },
+  "alreadyBlockedCurrent": {
+    "message": "This site is already blocked."
+  },
+  "blockedSites": {
+    "message": "Blocked sites"
+  },
+  "emptyList": {
+    "message": "No blocked sites yet."
+  },
+  "addOtherSite": {
+    "message": "Add another site"
+  },
+  "sitePlaceholder": {
+    "message": "e.g. youtube.com"
+  },
+  "block": {
+    "message": "Block"
+  },
+  "manageSites": {
+    "message": "Manage sites →"
+  },
+  "upsellTitle": {
+    "message": "Want to block more sites?"
+  },
+  "upsellText": {
+    "message": "Premium unlocks unlimited sites for US$$ 3/month."
+  },
+  "upsellTextOptions": {
+    "message": "Premium unlocks unlimited sites for US$$ 3/month. Sign in from the extension icon to subscribe."
+  },
+  "subscribe": {
+    "message": "Get Premium"
+  },
+  "account": {
+    "message": "Account"
+  },
+  "emailPlaceholder": {
+    "message": "Email"
+  },
+  "passwordPlaceholder": {
+    "message": "Password (min. 6 characters)"
+  },
+  "signIn": {
+    "message": "Sign in"
+  },
+  "signUp": {
+    "message": "Create account"
+  },
+  "manageSubscription": {
+    "message": "Manage subscription"
+  },
+  "refreshStatus": {
+    "message": "Refresh status"
+  },
+  "signOut": {
+    "message": "Sign out"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "replace": {
+    "message": "Change"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "inactive": {
+    "message": "inactive"
+  },
+  "inactiveHint": {
+    "message": "Inactive: the free plan only blocks the first $P1$ sites",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "countPremium": {
+    "message": "$P1$ sites blocked",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "countFree": {
+    "message": "$P1$ of $P2$ on the free plan",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "planPremiumUntil": {
+    "message": "Premium active until $P1$ (renews automatically).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "planPremium": {
+    "message": "Premium active."
+  },
+  "planStatus": {
+    "message": "Subscription: $P1$. Sites beyond $P2$ are inactive.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "planFree": {
+    "message": "Free plan."
+  },
+  "signupConfirm": {
+    "message": "Account created! Confirm it using the link sent to your email, then click Sign in."
+  },
+  "errorInvalidCredentials": {
+    "message": "Incorrect email or password."
+  },
+  "errorEmailNotConfirmed": {
+    "message": "Confirm your email before signing in."
+  },
+  "errorAlreadyRegistered": {
+    "message": "This email already has an account. Use Sign in."
+  },
+  "errorLoginToSubscribe": {
+    "message": "Sign in or create an account to subscribe."
+  },
+  "errorLoginFirst": {
+    "message": "Sign in first."
+  },
+  "errorInvalidDomain": {
+    "message": "Enter a valid domain, e.g. youtube.com"
+  },
+  "errorAlreadyBlocked": {
+    "message": "$P1$ is already blocked.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorFreeLimit": {
+    "message": "The free plan allows up to $P1$ sites.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "settingsTitle": {
+    "message": "Settings · Focus Block"
+  },
+  "addSitePlaceholder": {
+    "message": "Add a site, e.g. youtube.com"
+  },
+  "emptyListTip": {
+    "message": "No blocked sites yet. Tip: open the site that distracts you and click \"Block this site\" in the extension icon."
+  },
+  "blockedPageTitle": {
+    "message": "Site blocked · Focus Block"
+  },
+  "blockedHeading": {
+    "message": "Breathe. This time is yours."
+  },
+  "thisSite": {
+    "message": "This site"
+  },
+  "blockedIsBlocked": {
+    "message": "can wait a little."
+  },
+  "blockedBackToWork": {
+    "message": "Get back to what matters."
+  },
+  "forgotPassword": {
+    "message": "Forgot password?"
+  },
+  "errorEnterEmail": {
+    "message": "Enter your email above to receive a password reset link."
+  },
+  "resetSent": {
+    "message": "If an account exists for this email, we sent a link to create a new password."
+  },
+  "breatheIn": {
+    "message": "breathe in"
+  },
+  "breatheOut": {
+    "message": "breathe out"
+  },
+  "quote1": {
+    "message": "One thing at a time. Slow still gets there."
+  },
+  "quote2": {
+    "message": "What were you doing before you came here?"
+  },
+  "quote3": {
+    "message": "Grab some water, stretch your shoulders, come back."
+  },
+  "quote4": {
+    "message": "Distractions pass. What you build stays."
+  },
+  "quote5": {
+    "message": "You don't need to see this right now."
+  },
+  "seeAllSites": {
+    "message": "See all $P1$ sites →",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "searchSites": {
+    "message": "Search sites"
+  },
+  "noResults": {
+    "message": "No sites found."
+  }
+}

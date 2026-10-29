@@ -1,0 +1,243 @@
+{
+  "extName": {
+    "message": "Focus Block"
+  },
+  "extDescription": {
+    "message": "Bloquea los sitios que te quitan el foco."
+  },
+  "currentSite": {
+    "message": "Sitio actual"
+  },
+  "blockThisSite": {
+    "message": "Bloquear este sitio"
+  },
+  "alreadyBlockedCurrent": {
+    "message": "Este sitio ya está bloqueado."
+  },
+  "blockedSites": {
+    "message": "Sitios bloqueados"
+  },
+  "emptyList": {
+    "message": "Aún no hay sitios bloqueados."
+  },
+  "addOtherSite": {
+    "message": "Agregar otro sitio"
+  },
+  "sitePlaceholder": {
+    "message": "ej: youtube.com"
+  },
+  "block": {
+    "message": "Bloquear"
+  },
+  "manageSites": {
+    "message": "Administrar sitios →"
+  },
+  "upsellTitle": {
+    "message": "¿Quieres bloquear más sitios?"
+  },
+  "upsellText": {
+    "message": "El plan Premium desbloquea sitios ilimitados por US$$ 3/mes."
+  },
+  "upsellTextOptions": {
+    "message": "El plan Premium desbloquea sitios ilimitados por US$$ 3/mes. Inicia sesión desde el ícono de la extensión para suscribirte."
+  },
+  "subscribe": {
+    "message": "Suscribirse a Premium"
+  },
+  "account": {
+    "message": "Cuenta"
+  },
+  "emailPlaceholder": {
+    "message": "Correo electrónico"
+  },
+  "passwordPlaceholder": {
+    "message": "Contraseña (mín. 6 caracteres)"
+  },
+  "signIn": {
+    "message": "Iniciar sesión"
+  },
+  "signUp": {
+    "message": "Crear cuenta"
+  },
+  "manageSubscription": {
+    "message": "Administrar suscripción"
+  },
+  "refreshStatus": {
+    "message": "Actualizar estado"
+  },
+  "signOut": {
+    "message": "Cerrar sesión"
+  },
+  "remove": {
+    "message": "Quitar"
+  },
+  "replace": {
+    "message": "Cambiar"
+  },
+  "save": {
+    "message": "Guardar"
+  },
+  "cancel": {
+    "message": "Cancelar"
+  },
+  "inactive": {
+    "message": "inactivo"
+  },
+  "inactiveHint": {
+    "message": "Inactivo: el plan gratuito solo bloquea los primeros $P1$ sitios",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "countPremium": {
+    "message": "$P1$ sitios bloqueados",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "countFree": {
+    "message": "$P1$ de $P2$ en el plan gratuito",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "planPremiumUntil": {
+    "message": "Premium activo hasta el $P1$ (se renueva automáticamente).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "planPremium": {
+    "message": "Premium activo."
+  },
+  "planStatus": {
+    "message": "Suscripción: $P1$. Los sitios después de $P2$ quedan inactivos.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "planFree": {
+    "message": "Plan gratuito."
+  },
+  "signupConfirm": {
+    "message": "¡Cuenta creada! Confírmala con el enlace enviado a tu correo y luego haz clic en Iniciar sesión."
+  },
+  "errorInvalidCredentials": {
+    "message": "Correo o contraseña incorrectos."
+  },
+  "errorEmailNotConfirmed": {
+    "message": "Confirma tu correo antes de iniciar sesión."
+  },
+  "errorAlreadyRegistered": {
+    "message": "Este correo ya tiene una cuenta. Usa Iniciar sesión."
+  },
+  "errorLoginToSubscribe": {
+    "message": "Inicia sesión o crea una cuenta para suscribirte."
+  },
+  "errorLoginFirst": {
+    "message": "Inicia sesión primero."
+  },
+  "errorInvalidDomain": {
+    "message": "Escribe un dominio válido, ej: youtube.com"
+  },
+  "errorAlreadyBlocked": {
+    "message": "$P1$ ya está bloqueado.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "errorFreeLimit": {
+    "message": "El plan gratuito permite hasta $P1$ sitios.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "settingsTitle": {
+    "message": "Configuración · Focus Block"
+  },
+  "addSitePlaceholder": {
+    "message": "Agregar sitio, ej: youtube.com"
+  },
+  "emptyListTip": {
+    "message": "Aún no hay sitios bloqueados. Consejo: abre el sitio que te distrae y haz clic en \"Bloquear este sitio\" en el ícono de la extensión."
+  },
+  "blockedPageTitle": {
+    "message": "Sitio bloqueado · Focus Block"
+  },
+  "blockedHeading": {
+    "message": "Respira. Este tiempo es tuyo."
+  },
+  "thisSite": {
+    "message": "Este sitio"
+  },
+  "blockedIsBlocked": {
+    "message": "puede esperar un poco."
+  },
+  "blockedBackToWork": {
+    "message": "Vuelve a lo que importa."
+  },
+  "forgotPassword": {
+    "message": "¿Olvidaste tu contraseña?"
+  },
+  "errorEnterEmail": {
+    "message": "Escribe tu correo arriba para recibir el enlace de nueva contraseña."
+  },
+  "resetSent": {
+    "message": "Si existe una cuenta con ese correo, enviamos un enlace para crear una nueva contraseña."
+  },
+  "breatheIn": {
+    "message": "inhala"
+  },
+  "breatheOut": {
+    "message": "exhala"
+  },
+  "quote1": {
+    "message": "Una cosa a la vez. Despacio también se llega."
+  },
+  "quote2": {
+    "message": "¿Qué estabas haciendo antes de venir aquí?"
+  },
+  "quote3": {
+    "message": "Toma un poco de agua, estira los hombros y vuelve."
+  },
+  "quote4": {
+    "message": "La distracción pasa. Lo que construyes se queda."
+  },
+  "quote5": {
+    "message": "No necesitas ver esto ahora."
+  },
+  "seeAllSites": {
+    "message": "Ver los $P1$ sitios →",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "searchSites": {
+    "message": "Buscar sitio"
+  },
+  "noResults": {
+    "message": "No se encontraron sitios."
+  }
+}

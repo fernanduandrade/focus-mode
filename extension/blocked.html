@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Focus Block</title>
+  <link rel="stylesheet" href="scene.css">
+  <link rel="stylesheet" href="blocked.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="orb"></div>
+    <div class="clouds"></div>
+    <div class="rain"></div>
+    <div class="hills"></div>
+  </div>
+
+  <main>
+    <p id="clock" class="clock"></p>
+
+    <div class="breath" aria-hidden="true">
+      <div class="breath-circle"></div>
+      <span id="breath-label" class="breath-label"></span>
+    </div>
+
+    <h1 id="heading"></h1>
+    <p class="site-line"><span id="site" class="site"></span> <span id="is-blocked"></span></p>
+    <p id="quote" class="quote"></p>
+
+    <!-- Um ícone por cena: café no amanhecer, planta de dia, fones à tarde, lua à noite. -->
+    <svg class="scene-icon icon-dawn" viewBox="0 0 64 64" aria-hidden="true">
+      <path class="steam s1" d="M24 18c-3-4 3-6 0-10" />
+      <path class="steam s2" d="M32 18c-3-4 3-6 0-10" />
+      <path class="steam s3" d="M40 18c-3-4 3-6 0-10" />
+      <path class="line" d="M16 24h32v16a12 12 0 0 1-12 12h-8a12 12 0 0 1-12-12z" />
+      <path class="line" d="M48 28h4a6 6 0 0 1 0 12h-4" />
+    </svg>
+    <svg class="scene-icon icon-day" viewBox="0 0 64 64" aria-hidden="true">
+      <g class="sway">
+        <path class="line" d="M32 40V22" />
+        <path class="line" d="M32 30c-8 0-12-6-12-12 7 0 12 5 12 12z" />
+        <path class="line" d="M32 26c0-8 5-13 13-13 0 8-5 13-13 13z" />
+      </g>
+      <path class="line" d="M20 40h24l-3 16H23z" />
+    </svg>
+    <svg class="scene-icon icon-afternoon" viewBox="0 0 64 64" aria-hidden="true">
+      <path class="line" d="M14 40v-6a18 18 0 0 1 36 0v6" />
+      <rect class="line" x="12" y="38" width="9" height="14" rx="4" />
+      <rect class="line" x="43" y="38" width="9" height="14" rx="4" />
+      <path class="note" d="M30 16v-6l6-2v6" />
+    </svg>
+    <svg class="scene-icon icon-night" viewBox="0 0 64 64" aria-hidden="true">
+      <path class="line" d="M38 14a18 18 0 1 0 14 26 15 15 0 0 1-14-26z" />
+      <path class="twinkle t1" d="M50 12v6M47 15h6" />
+      <path class="twinkle t2" d="M18 14v4M16 16h4" />
+    </svg>
+  </main>
+
+  <script src="scene.js"></script>
+  <script src="blocked.js"></script>
+</body>
+</html>

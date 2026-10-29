@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Focus Block</title>
+  <link rel="stylesheet" href="scene.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="orb"></div>
+    <div class="clouds"></div>
+    <div class="rain"></div>
+    <div class="hills"></div>
+  </div>
+
+  <main>
+    <header>
+      <h1>Focus Block</h1>
+      <span id="plan-badge" class="badge">Free</span>
+    </header>
+
+    <section>
+      <div class="section-header">
+        <h2 data-i18n="blockedSites"></h2>
+        <span id="limit-info" class="muted"></span>
+      </div>
+
+      <form id="add-form">
+        <input id="site-input" type="text" data-i18n-placeholder="addSitePlaceholder" autocomplete="off" required>
+        <button type="submit" data-i18n="block"></button>
+      </form>
+      <p id="message" class="error" hidden></p>
+
+      <input id="search-input" class="search" type="search" data-i18n-placeholder="searchSites" autocomplete="off" hidden>
+      <ul id="site-list"></ul>
+      <p id="no-results" class="muted" data-i18n="noResults" hidden></p>
+      <p id="empty-list" class="muted" data-i18n="emptyListTip" hidden></p>
+    </section>
+
+    <section id="upsell" class="card" hidden>
+      <div>
+        <strong data-i18n="upsellTitle"></strong>
+        <p class="muted" data-i18n="upsellTextOptions"></p>
+      </div>
+    </section>
+  </main>
+
+  <template id="site-item">
+    <li>
+      <img class="favicon" alt="" width="20" height="20">
+      <span class="domain"></span>
+      <input class="edit-input" type="text" hidden>
+      <span class="tag" data-i18n="inactive" hidden></span>
+      <div class="actions">
+        <button type="button" class="secondary edit-btn" data-i18n="replace"></button>
+        <button type="button" class="secondary save-btn" data-i18n="save" hidden></button>
+        <button type="button" class="link cancel-btn" data-i18n="cancel" hidden></button>
+        <button type="button" class="danger remove-btn" data-i18n="remove"></button>
+      </div>
+    </li>
+  </template>
+
+  <script src="scene.js"></script>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
