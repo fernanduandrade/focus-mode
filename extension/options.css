@@ -92,3 +92,7 @@ li .edit-input { flex: 1; }
 .search { width: 100%; margin-top: 16px; }
 
 section.card strong { display: block; margin-bottom: 2px; }
+
+.footer { margin-top: 8px; padding: 0 4px; text-align: center; font-size: 13px; color: var(--muted); }
+.footer a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--field-border); }
+.footer a:hover { border-color: var(--text); }

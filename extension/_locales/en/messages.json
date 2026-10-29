@@ -263,5 +263,11 @@
         "content": "$1"
       }
     }
+  },
+  "contactDev": {
+    "message": "Contact the developer:"
+  },
+  "privacyPolicy": {
+    "message": "Privacy policy"
   }
 }

@@ -36,10 +36,10 @@
     "message": "Quer bloquear mais sites?"
   },
   "upsellText": {
-    "message": "O plano Premium libera sites ilimitados por US$$ 3/mês."
+    "message": "O plano Premium libera sites ilimitados por R$$ 9,90/mês."
   },
   "upsellTextOptions": {
-    "message": "O plano Premium libera sites ilimitados por US$$ 3/mês. Entre na sua conta pelo ícone da extensão para assinar."
+    "message": "O plano Premium libera sites ilimitados por R$$ 9,90/mês. Entre na sua conta pelo ícone da extensão para assinar."
   },
   "subscribe": {
     "message": "Assinar Premium"
@@ -263,5 +263,11 @@
         "content": "$1"
       }
     }
+  },
+  "contactDev": {
+    "message": "Fale com o desenvolvedor:"
+  },
+  "privacyPolicy": {
+    "message": "Política de privacidade"
   }
 }

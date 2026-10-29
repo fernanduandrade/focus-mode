@@ -105,14 +105,24 @@ export async function refreshPlan() {
   return plan;
 }
 
-async function callFunction(name) {
+async function callFunction(name, body = {}) {
   const session = await getSession();
   if (!session) throw new Error(t("errorLoginFirst"));
-  return request(`/functions/v1/${name}`, { method: "POST", token: session.access_token, body: {} });
+  return request(`/functions/v1/${name}`, { method: "POST", token: session.access_token, body });
+}
+
+// Cartões brasileiros costumam recusar cobrança em dólar, então quem está no Brasil paga em reais.
+// O fuso horário indica o país melhor que o idioma (um brasileiro pode usar o Chrome em inglês).
+function checkoutCurrency() {
+  const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+  const brazilZones = ["America/Sao_Paulo", "America/Bahia", "America/Fortaleza", "America/Recife", "America/Maceio",
+    "America/Belem", "America/Manaus", "America/Cuiaba", "America/Campo_Grande", "America/Porto_Velho",
+    "America/Boa_Vista", "America/Rio_Branco", "America/Araguaina", "America/Santarem", "America/Noronha", "America/Eirunepe"];
+  return brazilZones.includes(zone) ? "brl" : "usd";
 }
 
 export async function createCheckoutUrl() {
-  const { url } = await callFunction("create-checkout");
+  const { url } = await callFunction("create-checkout", { currency: checkoutCurrency() });
   return url;
 }
 
