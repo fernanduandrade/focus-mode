@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Focus Block · Privacy Policy</title>
+  <link rel="stylesheet" href="scene.css">
+  <style>
+    [hidden] { display: none !important; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; padding: 40px 16px; background: var(--sky-top); color: var(--text);
+           font: 16px/1.65 ui-rounded, "SF Pro Rounded", "Nunito", "Segoe UI", system-ui, sans-serif; }
+    .sky { position: fixed; }
+    main { max-width: 720px; margin: 0 auto; padding: 36px 32px; border-radius: 28px; background: var(--glass);
+           border: 1px solid rgba(255, 255, 255, 0.12); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+           box-shadow: 0 20px 60px rgba(10, 6, 20, 0.3); }
+    h1 { margin: 0 0 4px; font-size: 30px; line-height: 1.25; }
+    h2 { margin: 28px 0 6px; font-size: 19px; }
+    p, li { color: var(--text); opacity: 0.92; }
+    .muted { color: var(--muted); font-size: 14px; }
+    a { color: var(--accent); }
+    nav { display: flex; gap: 8px; margin-bottom: 20px; }
+    nav button { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--field-border); background: var(--field);
+                 color: var(--text); font: inherit; font-size: 14px; cursor: pointer; }
+    nav button[aria-pressed="true"] { background: var(--accent); color: var(--button-fg); border-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="orb"></div>
+    <div class="clouds"></div>
+    <div class="rain"></div>
+    <div class="hills"></div>
+  </div>
+
+  <main>
+    <nav>
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="pt">Português</button>
+      <button type="button" data-lang="es">Español</button>
+    </nav>
+
+    <article lang="en" data-lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="muted">Focus Block · Last updated: October 29, 2026</p>
+      <p>Focus Block is a Chrome extension that blocks the websites you choose so you can stay focused. This policy explains what data it handles.</p>
+      <h2>Your blocked sites stay on your computer</h2>
+      <p>The list of sites you block is stored only in your browser (<code>chrome.storage.local</code>). It is never sent to our servers or to anyone else. Focus Block does not read, collect or store your browsing history or the content of the pages you visit.</p>
+      <h2>Account</h2>
+      <p>An account is only needed to subscribe to Premium. When you create one, we store your <strong>email address</strong> and a securely hashed password with our authentication provider, <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>. We use your email only to sign you in, confirm your account and send password reset links.</p>
+      <h2>Payments</h2>
+      <p>Payments are processed by <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe</a>. We never see or store your card details. We keep only your Stripe customer ID and your subscription status (for example active, canceled and the renewal date) to unlock Premium features.</p>
+      <h2>What we don't do</h2>
+      <ul>
+        <li>We don't sell or share your data with third parties, other than the providers above that run the service.</li>
+        <li>We don't use analytics, ads or tracking.</li>
+        <li>We don't use your data for any purpose unrelated to the extension's single purpose: blocking distracting websites.</li>
+      </ul>
+      <h2>Deleting your data</h2>
+      <p>Removing the extension deletes your blocked site list. To delete your account and subscription record, cancel your subscription and open a request at <a href="https://github.com/fernanduandrade/focus-mode/issues" target="_blank" rel="noopener">github.com/fernanduandrade/focus-mode/issues</a>.</p>
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="https://github.com/fernanduandrade/focus-mode/issues" target="_blank" rel="noopener">github.com/fernanduandrade/focus-mode/issues</a>.</p>
+    </article>
+
+    <article lang="pt-BR" data-lang="pt" hidden>
+      <h1>Política de Privacidade</h1>
+      <p class="muted">Focus Block · Atualizada em 29 de outubro de 2026</p>
+      <p>O Focus Block é uma extensão do Chrome que bloqueia os sites que você escolher para você manter o foco. Esta política explica quais dados ela usa.</p>
+      <h2>Seus sites bloqueados ficam no seu computador</h2>
+      <p>A lista de sites que você bloqueia fica salva só no seu navegador (<code>chrome.storage.local</code>). Ela nunca é enviada para os nossos servidores nem para ninguém. O Focus Block não lê, coleta nem guarda seu histórico de navegação ou o conteúdo das páginas que você visita.</p>
+      <h2>Conta</h2>
+      <p>A conta só é necessária para assinar o Premium. Ao criar uma, guardamos seu <strong>e-mail</strong> e uma senha protegida por hash no nosso provedor de autenticação, o <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>. Usamos o e-mail só para você entrar, confirmar a conta e receber links de nova senha.</p>
+      <h2>Pagamentos</h2>
+      <p>Os pagamentos são processados pelo <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe</a>. Nunca vemos nem guardamos os dados do seu cartão. Guardamos apenas o ID de cliente do Stripe e o status da assinatura (por exemplo ativa, cancelada e a data de renovação) para liberar o Premium.</p>
+      <h2>O que não fazemos</h2>
+      <ul>
+        <li>Não vendemos nem compartilhamos seus dados com terceiros, além dos provedores acima que fazem o serviço funcionar.</li>
+        <li>Não usamos analytics, anúncios nem rastreamento.</li>
+        <li>Não usamos seus dados para nada fora do propósito único da extensão: bloquear sites que distraem.</li>
+      </ul>
+      <h2>Excluir seus dados</h2>
+      <p>Remover a extensão apaga sua lista de sites. Para excluir sua conta e o registro da assinatura, cancele a assinatura e abra um pedido em <a href="https://github.com/fernanduandrade/focus-mode/issues" target="_blank" rel="noopener">github.com/fernanduandrade/focus-mode/issues</a>.</p>
+      <h2>Contato</h2>
+      <p>Dúvidas sobre esta política: <a href="https://github.com/fernanduandrade/focus-mode/issues" target="_blank" rel="noopener">github.com/fernanduandrade/focus-mode/issues</a>.</p>
+    </article>
+
+    <article lang="es" data-lang="es" hidden>
+      <h1>Política de Privacidad</h1>
+      <p class="muted">Focus Block · Actualizada el 29 de octubre de 2026</p>
+      <p>Focus Block es una extensión de Chrome que bloquea los sitios que elijas para que mantengas el foco. Esta política explica qué datos utiliza.</p>
+      <h2>Tus sitios bloqueados se quedan en tu computadora</h2>
+      <p>La lista de sitios que bloqueas se guarda solo en tu navegador (<code>chrome.storage.local</code>). Nunca se envía a nuestros servidores ni a nadie. Focus Block no lee, recopila ni guarda tu historial de navegación ni el contenido de las páginas que visitas.</p>
+      <h2>Cuenta</h2>
+      <p>La cuenta solo es necesaria para suscribirte a Premium. Al crearla, guardamos tu <strong>correo electrónico</strong> y una contraseña protegida con hash en nuestro proveedor de autenticación, <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>. Usamos el correo solo para iniciar sesión, confirmar la cuenta y enviar enlaces para cambiar la contraseña.</p>
+      <h2>Pagos</h2>
+      <p>Los pagos los procesa <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe</a>. Nunca vemos ni guardamos los datos de tu tarjeta. Solo guardamos tu ID de cliente de Stripe y el estado de la suscripción (por ejemplo activa, cancelada y la fecha de renovación) para activar Premium.</p>
+      <h2>Lo que no hacemos</h2>
+      <ul>
+        <li>No vendemos ni compartimos tus datos con terceros, salvo los proveedores mencionados que hacen funcionar el servicio.</li>
+        <li>No usamos analítica, anuncios ni rastreo.</li>
+        <li>No usamos tus datos para nada ajeno al propósito único de la extensión: bloquear sitios que distraen.</li>
+      </ul>
+      <h2>Eliminar tus datos</h2>
+      <p>Quitar la extensión borra tu lista de sitios. Para eliminar tu cuenta y el registro de la suscripción, cancela la suscripción y abre una solicitud en <a href="https://github.com/fernanduandrade/focus-mode/issues" target="_blank" rel="noopener">github.com/fernanduandrade/focus-mode/issues</a>.</p>
+      <h2>Contacto</h2>
+      <p>Preguntas sobre esta política: <a href="https://github.com/fernanduandrade/focus-mode/issues" target="_blank" rel="noopener">github.com/fernanduandrade/focus-mode/issues</a>.</p>
+    </article>
+  </main>
+
+  <script src="scene.js"></script>
+  <script>
+    // Idioma: ?lang=en|pt|es, senão o do navegador.
+    const wanted = new URLSearchParams(location.search).get("lang") || (navigator.language || "en").slice(0, 2);
+    function setLang(lang) {
+      if (!["en", "pt", "es"].includes(lang)) lang = "en";
+      document.querySelectorAll("article").forEach((a) => (a.hidden = a.dataset.lang !== lang));
+      document.querySelectorAll("nav button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+      document.documentElement.lang = document.querySelector(`article[data-lang="${lang}"]`).lang;
+    }
+    document.querySelectorAll("nav button").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
+    setLang(wanted);
+  </script>
+</body>
+</html>

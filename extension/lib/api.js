@@ -90,7 +90,7 @@ export async function refreshPlan() {
     return plan;
   }
   const rows = await request(
-    `/rest/v1/subscriptions?select=status,current_period_end&user_id=eq.${session.user.id}`,
+    `/rest/v1/subscriptions?select=status,current_period_end,cancel_at_period_end&user_id=eq.${session.user.id}`,
     { token: session.access_token },
   );
   const row = rows?.[0];
@@ -98,6 +98,7 @@ export async function refreshPlan() {
     premium: Boolean(row && PREMIUM_STATUSES.includes(row.status)),
     status: row?.status ?? null,
     currentPeriodEnd: row?.current_period_end ?? null,
+    canceled: Boolean(row?.cancel_at_period_end),
     checkedAt: Date.now(),
   };
   await store.set("plan", plan);

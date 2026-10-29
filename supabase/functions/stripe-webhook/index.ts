@@ -15,7 +15,8 @@ async function saveSubscription(subscription: Stripe.Subscription) {
       status: subscription.status,
       price_id: item?.price.id ?? null,
       current_period_end: periodEnd ? new Date(periodEnd * 1000).toISOString() : null,
-      cancel_at_period_end: subscription.cancel_at_period_end,
+      // O portal do Stripe pode cancelar com cancel_at (data) em vez de cancel_at_period_end.
+      cancel_at_period_end: subscription.cancel_at_period_end || Boolean(subscription.cancel_at),
       updated_at: new Date().toISOString(),
     })
     .eq("stripe_customer_id", customerId);

@@ -239,5 +239,21 @@
   },
   "noResults": {
     "message": "No sites found."
+  },
+  "planCanceledUntil": {
+    "message": "Subscription canceled. Premium stays active until $P1$ and won't renew.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "badgeCanceled": {
+    "message": "Premium until $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   }
 }

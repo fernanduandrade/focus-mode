@@ -80,9 +80,13 @@ function renderAccount() {
   $("user-email").textContent = state.session.user.email;
   $("manage-btn").hidden = !state.plan.status;
   if (state.plan.premium) {
-    $("plan-detail").textContent = state.plan.currentPeriodEnd
-      ? t("planPremiumUntil", formatDate(state.plan.currentPeriodEnd))
-      : t("planPremium");
+    const end = state.plan.currentPeriodEnd ? formatDate(state.plan.currentPeriodEnd) : null;
+    if (state.plan.canceled && end) {
+      $("plan-detail").textContent = t("planCanceledUntil", end);
+      badge.textContent = t("badgeCanceled", end);
+    } else {
+      $("plan-detail").textContent = end ? t("planPremiumUntil", end) : t("planPremium");
+    }
   } else if (state.plan.status) {
     $("plan-detail").textContent = t("planStatus", state.plan.status, FREE_SITE_LIMIT);
   } else {

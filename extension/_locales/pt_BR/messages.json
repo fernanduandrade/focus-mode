@@ -239,5 +239,21 @@
   },
   "noResults": {
     "message": "Nenhum site encontrado."
+  },
+  "planCanceledUntil": {
+    "message": "Assinatura cancelada. O Premium continua até $P1$ e não será renovado.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "badgeCanceled": {
+    "message": "Premium até $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   }
 }
